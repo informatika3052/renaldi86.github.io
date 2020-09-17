@@ -1,0 +1,423 @@
+@font-face {
+    font-family: 'Quicksand','Roboto','Monserrat';
+    src: url('../fonts/Quicksand/static/Quicksand-Bold.ttf'),
+    url('../fonts/Roboto/Roboto-Bold.ttf'),
+    url('../fonts/Quicksand/static/Quicksand-Medium.ttf'),
+    url('../fonts/Montserrat/Montserrat-Bold.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Quicksand',Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 18px;
+    scroll-behavior: smooth;
+}
+header {
+    width: 100%;
+    position: relative;
+    height: 100vh;
+    padding: 20px;
+}
+nav {
+    max-width: 100%;
+    margin: 0 150px;
+    display: flex;
+    justify-content: space-between; 
+} 
+.hamb {
+    width: 64px;
+    height: 62px;
+    border-radius: 50%;
+    transition: 0.5s;
+    cursor: pointer;
+    z-index: 2222;
+}
+.hamb button  {
+    background-color: #61b3ff00;
+    border: none;
+    outline-style: none;
+}
+.hamb button:hover{
+    cursor: pointer;
+}
+.hamb:hover{
+    background-color: rgb(73, 29, 29);
+    cursor: pointer;
+}
+.nav-brand, .nav-button {
+    margin-top: 10px;
+    transition: 0.5s;
+}
+.nav-button{
+    font-size: 12px;
+    width: 22%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    
+}
+.nav-button h2 {
+    margin-top: 5px;
+}
+.nav-button span {
+    font-size: 15px;
+    color: rgb(14, 14, 59);
+}
+.nav-button button,
+ .heading1 button,
+ .text-heading button,
+ .btn-primary,
+ .btn-secondarry,
+ .course button,
+ .close-btn button  {
+    width: 130px;
+    height: 40px;
+    border:none;
+    border-radius: 30px;
+    background-color: rgb(93, 102, 231);
+    color: #FDF2F2;
+    font-family: 'Quicksand';
+    font-size: 18px;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: 0.5s;
+    z-index: 1111;
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.2);
+    outline-style: none;
+}
+.nav-button button:hover,
+ .heading1 button:hover,
+ .text-heading button:hover,
+ .btn-primary:hover,
+ .close-btn button:hover {
+    background-color: rgb(20, 23, 207);
+    transform: scale(1.01 );
+}
+/* Jumbotron */
+.jumbotron {
+    margin: 20px 150px;
+    display: flex;
+    justify-content: space-between;
+}
+.heading1 {
+    width: 50%;
+    margin-top: 80px;
+}
+.heading1 h1 {
+    font-size: 56px;
+}
+.heading1 p {
+    color: #818181;
+    padding-top: 20px;
+}
+.heading1 button {
+    margin-top: 20px;
+}
+button.btn-secondary {
+    background-color:rgb(243, 241, 241);
+    color: rgb(17, 17, 63);
+    border: 2px solid rgba(0, 0, 0, 0.459);
+    font-family: 'Quicksand';
+    font-weight: 700;
+}
+button.btn-secondary:hover {
+    background-color: rgb(93, 95, 214);
+}
+
+/* HEADING-2 */
+.hero-heading .hero-1 {
+    position: absolute;
+    top: -100px;
+    right: 0;
+}
+.hero-heading .hero-2 {
+    position: absolute;
+    top: 80px;
+    right: 50px;
+}
+main {
+    margin: 20px 150px;
+}
+main p {
+    color: #818181;
+}
+main h1,main p {
+    
+    text-align: center;
+    padding-top: 10px;
+}
+
+/* Content */
+.content {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+ .content article {
+    display: flex;
+    justify-content: space-evenly;
+}
+.content img {
+    width: 50px; 
+}
+.content article h2 {
+    margin-top: 10px;
+    margin-left: 15px;
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-weight: 700;
+}
+
+/* Content-2 */
+.content-2 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 70px;
+}
+.content-2 .text-heading {
+    width: 40%;
+}
+.content-2 .text-heading p,
+.hero-testimoni p,
+.text-closing p {
+    text-align: left;
+    color: #818181;
+}
+.text-heading button {
+    margin-top: 25px;
+}
+.content-2.after{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 70px;
+}
+.content-2 .hero-2 {
+    position: relative;
+    top: -100px;
+    left: 30px;
+
+}
+
+/* Pricelist */
+.pricelist {
+    margin: 20px 150px;
+    background-color: #b7d8f7;
+    height: 700px;
+    border-radius: 30px;
+    padding: 20px;
+}
+.pricelist h1, .pricelist p{
+    text-align: center;
+}
+.pricelist h1,main h1 {
+    font-family: 'Quicksand',sans-serif;
+    font-size: 44px;
+}
+.choose {
+    padding:10px;
+    max-width: 30%;
+    display: flex;
+    margin-left: 350px;
+    background-color: #3FDAFC;
+    margin-top: 30px;
+    height: 60px;
+    border-radius: 30px;
+}
+
+.choose .btn-secondarry {
+    background-color: #3FDAFC;
+    border: none;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.2);
+    transition: 0.5s;
+}
+.choose .btn-secondarry:hover {
+    color: #131516;
+}
+.pricelist-menu {
+    display: flex;
+    justify-content: space-around;
+}
+.course {
+    display: flex;
+    flex-direction: column;
+    border: 4px solid black;
+    border-radius: 20px;
+    padding: 20px;
+    height: 350px;
+    margin-top: 70px ;
+}
+.course a {
+    padding-top: 20px;
+    text-decoration: none;
+    cursor: text;
+    color: #838383;
+    font-family: "Roboto";
+}
+.cour-2 {
+    margin-top: 30px;
+    width: 28%;
+    height: 350px;
+    border: 4px solid rgb(93, 102, 231);
+}
+.cour-2 span {
+    color:  rgb(93, 102, 231);
+}
+.course img {
+    margin-right: 20px;
+}
+
+.course .btn:hover {
+    transform: scale(1.02);
+}
+button.btn-price1 {
+    margin-top: 120px;
+    margin-left: 30px;
+    background-color: black;
+}
+button.btn-price2 {
+    margin-top: 80px;
+    margin-left: 15px;
+    width: 200px;
+    height: 50px; 
+}
+button.btn-price3 {
+    margin-top: 40px;
+    margin-left: 30px;
+    background-color: black;
+}
+
+/* Testimoni */
+.testimoni{
+    display: flex;
+    margin: 20px 150px;
+    margin-top: 60px;
+    justify-content: space-between;
+    overflow: hidden;
+}
+.testimoni h2 {
+    font-family: 'Quicksand',sans-serif;
+    font-size: 44px;
+} 
+.hero-testimoni h2 {
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+.hero-testimoni {
+    width: 70%;
+    position: relative;
+    top: -200px;
+}
+.hero-testimoni span{
+    color: rgb(96, 176, 207);
+    position: relative;
+    top: 10px;
+}
+.hero-testimoni ul {
+    display: flex;
+    margin-left: -12px;
+}
+.hero-testimoni ul li {
+    list-style: none;
+    margin-left: 15px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+/*Closing  */
+.closing {
+    margin: 20px 150px;
+    display: flex;
+    justify-content: space-between;
+    height: 300px;
+    background-color: #b7d8f7;
+    border-radius: 40px;
+    padding: 40px;
+}
+
+.text-closing {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+.text-closing h2 {
+    margin-bottom: 20px;
+}
+.text-closing p {
+    margin-bottom: 20px;
+}
+.close-btn button {
+    position: relative;
+    top: 0;
+    right: 30%;
+}
+
+/* Footer */
+footer {
+    margin-top: 50px;
+    justify-content: space-between;
+    margin: 20px 150px;
+    display: flex;
+    padding-bottom: 200px;
+}
+
+footer article  {
+    display: flex;
+    flex-wrap: wrap;
+}
+footer article ul {
+    margin: 30px;
+}
+footer article ul li {
+    list-style: none;
+}
+footer article ul li a {
+    text-decoration: none;
+    color: #838383;
+    font-family: "Roboto";
+}
+footer article ul li a:hover {
+    color: rgb(47, 125, 180);
+}
+aside {
+    padding: 20px;
+}
+aside img{
+    margin-left: 20px;
+    border-radius: 50%;
+    box-shadow: -1px -1px 2px rgba(0, 0, 0, 0.2);
+    transition: 0.6s;
+    border: 3px solid rgb(150, 190, 252);
+}
+aside img:hover {
+    background-color: rgb(47, 125, 180);
+    cursor: pointer;
+    z-index: 222222;
+    transform: scale(1.1);
+}
+/* Button */
+.scroll-top  {   
+    position: fixed;
+    bottom: 60px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-image: linear-gradient(120deg, #89f7fe 0%, #66a6ff 100%);
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+    border: none;
+    outline-style: none;
+    transition: all 0.3s;
+    
+}
+.scroll-top:hover {
+    background-color: rgb(248, 79, 79);
+    cursor: pointer;
+    transform: scale(1.1);
+    background-image: linear-gradient(120deg, #fc5751 0%, #66a6ff 100%);
+
+}
+
