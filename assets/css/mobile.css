@@ -1,7 +1,5 @@
 @media (min-width: 320px) and (max-width:991px){
-    *{
-        Border: 1px solid red;
-    }
+   
     header {
         overflow: hidden;
         position: relative;
@@ -246,6 +244,7 @@
     .close-sidebar.muncul {
         cursor: pointer;
         display: block;
+        z-index: 999999;
       
        
     }
