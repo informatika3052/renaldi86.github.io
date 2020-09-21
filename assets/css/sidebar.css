@@ -37,7 +37,26 @@ ul.slider {
 .close {
     filter: invert(1);
 }
-
+.close-sidebar {
+    width: 60px;
+    height: 60px;
+    background-image: url(../img/close.svg);
+    z-index: 12121212;
+    position: fixed;
+    top: 20px;
+    right: 170px;
+    display: none;
+    transition: 1s;
+    box-shadow: 0px 0px 5px rgb(92, 88, 88);
+    border-radius: 50%;
+    background-position: center;
+}
+.close-sidebar.muncul {
+    cursor: pointer;
+    display: block;
+  
+   
+}
 
 header.slider {
     max-width: 100%;

@@ -1,5 +1,15 @@
 @media (min-width: 320px) and (max-width:991px){
-   
+    /* *{
+        Border: 1px solid red;
+    } */
+    p,.heading1 button,
+    .text-heading button,
+    .btn-primary,
+    .btn-secondarry,
+    .course button,
+    .close-btn button {
+        font-size: 12px;
+    }
     header {
         overflow: hidden;
         position: relative;
@@ -11,6 +21,24 @@
     }
     .nav-button {
         font-size: 0px;
+        width: 30%;
+    }
+    .nav-button button{
+        font-size: 10px;
+        
+    }
+    .hamb {
+        width: 50px;
+        height: 50px;
+        position: relative;
+        overflow: hidden;
+        top: 5px;
+    }
+    .hamb button img {
+        position: relative;
+        right: 8px;
+        top: -8px;
+       
     }
     .jumbotron {
         margin: 0;
@@ -40,7 +68,7 @@
         left: 10%;
     }
     .heading1 h1,main h1  {
-        font-size: 30px;
+        font-size: 25px;
     }
     main {
         margin: 20px 0;
@@ -50,6 +78,16 @@
     }
         
     /* Content-2 */
+    .content img {
+        width: 25%; 
+    }
+    .content article h2 {
+        margin-top: 5px;
+        font-size: 10px;
+        margin-left: 0;
+    }
+
+
     .content-2 {
         display: flex;
         justify-content: space-between;
@@ -77,10 +115,15 @@
     .content-2 .hero img {
         width: 80%;
     }
-    .content article h2{
-        margin-left: 0;
-        font-size: 10px;
+    .content-2 .text-heading h2,
+    .pricelist h1,
+    .testimoni .text-heading h2,
+    .hero-testimoni h2 {
+        font-size: 25px;
     }
+
+
+    /* Pricelist */
     .pricelist {
         margin: 20px 20px;
         position: relative;
@@ -89,7 +132,7 @@
 
     .choose {
         max-width: 300px;
-        margin-left: 35px;
+        margin-left: 0;
    
     }
     .pricelist-menu {
@@ -110,12 +153,12 @@
     }
     button.btn-price2 {
         margin-top: 80px;
-        margin-left: 15px;
+        margin-left: 0;
         width: 200px;
         height: 50px; 
     }
     button.btn-price3 {
-        margin-top: 40px;
+        margin-top: 20px;
         margin-left: 30px;
         background-color: black;
     }
@@ -153,7 +196,7 @@
         margin: 20px 10px;
         display: flex;
         flex-wrap: wrap;
-        height: 400px;
+        height: 450px;
         flex-direction: column;
         overflow: hidden;    
     }
@@ -178,24 +221,27 @@
     /* Footer */
     footer {
         margin-top: 100px;
-        margin: 20px 20px;
+        margin: 0 0;
         display: flex;
+        flex-wrap: wrap;
         padding-bottom: 200px;
+         background-color: beige;
+         box-shadow: 0px -1px 5px rgba(0, 0, 0, 0.2);
     }
 
     footer article  {
         display: flex;
-       
+        margin-left: 10%;
     }
     footer h1 {
-        width: 50%;
-        margin-top: 50px;
+        text-align: center;
+        margin-top: 20px;
+        width: 100%;
     }
     footer article ul {
         display: flex;
-       flex-wrap: wrap;
-       flex-direction: column;
-      
+        flex-wrap: wrap;
+        flex-direction: column;
     }
     
     footer article ul li {
@@ -211,14 +257,23 @@
     }
     aside {
         position: relative;
-        top: 0;
-        right: 50px;
         display: flex;
         flex-wrap: wrap;
-        flex-direction: column; 
+        margin-left: 10%;
     }
     aside img{
-        margin-top: 20px;
+        margin-top: 10px;
+        margin-left: 20px;
+        border-radius: 50%;
+        box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+        transition: 0.6s;
+        /* border: 5px solid rgb(233, 175, 128); */
+    }
+    aside img:hover {
+        background-color: rgb(47, 125, 180);
+        cursor: pointer;
+        z-index: 222222;
+        transform: scale(1.1);
     }
     .scroll-top  {   
         position: fixed;
@@ -228,25 +283,22 @@
     .sidebar ul {
      width: 100%; 
     }
-    /* .close-sidebar {
-        width: 65px;
-        height: 65px;
-        background-image: url(../img/close.svg);
-        z-index: 12121212;
+    .close-sidebar {
+        width: 50px;
+        height: 50px;
         position: fixed;
         top: 20px;
-        right: 40px;
-        display: none;
-        transition: 1s;
+        right: 20px;
         box-shadow: 0px 0px 5px rgba(255,255,255,1);
         border-radius: 50%;
-    } */
-    /* .close-sidebar.muncul {
+        transition: 0.5s;
+    }
+    .close-sidebar.muncul {
         cursor: pointer;
-        opacity: 1;
-        z-index: 999999;
+        display: block;
+      
        
-    } */
+    }
     ul.slider {
         opacity: 1;
         transform: translateX(0);
