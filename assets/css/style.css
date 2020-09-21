@@ -139,8 +139,11 @@ button.btn-secondary:hover {
     top: 80px;
     right: 50px;
 }
-main {
+#main {
     margin: 20px 150px;
+    transform: translateY(200px);
+    opacity: 0;
+    transition: all 1s;
 }
 main p {
     color: #818181;
@@ -209,6 +212,9 @@ main h1,main p {
     height: 700px;
     border-radius: 30px;
     padding: 20px;
+    opacity: 0;
+    transform: translateY(200px);
+    transition: all 1s ease ;
 }
 .pricelist h1, .pricelist p{
     text-align: center;
@@ -231,7 +237,6 @@ main h1,main p {
 .choose .btn-secondarry {
     background-color: #3FDAFC;
     border: none;
-    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.2);
     transition: 0.5s;
 }
 .choose .btn-secondarry:hover {

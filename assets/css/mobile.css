@@ -68,7 +68,7 @@
     .heading1 h1,main h1  {
         font-size: 25px;
     }
-    main {
+    #main {
         margin: 20px 0;
     }
     .hero-2 img {
@@ -139,8 +139,8 @@
         flex-wrap: wrap;
     }
     .course {
-        height: 250px; 
-        height: 350px;   
+       min-height: 280px;  
+       box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
     }
     .cour-2{
         width: 100%;

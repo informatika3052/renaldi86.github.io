@@ -78,3 +78,29 @@ function scrollFunction() {
 }
 
 
+// Event Scroll main
+
+const main = document.getElementById('main');
+function effectScroll() {
+
+    let introPort = main.getBoundingClientRect().top;
+    let screenPosition = window.innerHeight / 1.5;
+
+    if (introPort < screenPosition) {
+        main.classList.add('up');
+    }
+
+}
+window.addEventListener('scroll', effectScroll);
+
+//Event Scroll pricelist
+const pricelist = document.querySelector('.pricelist');
+
+function pricelistScroll() {
+    let introPort = pricelist.getBoundingClientRect().top;
+    let screenPosition = window.innerHeight / 1.5;
+    if (introPort < screenPosition) {
+        pricelist.classList.add('up');
+    }
+}
+window.addEventListener('scroll', pricelistScroll);
