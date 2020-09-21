@@ -93,6 +93,7 @@ function effectScroll() {
 }
 window.addEventListener('scroll', effectScroll);
 
+
 //Event Scroll pricelist
 const pricelist = document.querySelector('.pricelist');
 
@@ -104,3 +105,19 @@ function pricelistScroll() {
     }
 }
 window.addEventListener('scroll', pricelistScroll);
+
+// EvenT Scroll Testimoni
+
+const testimoni = document.querySelector('.testimoni');
+const textHeading = document.querySelector('.textScroll');
+const heroTestimoni = document.querySelector('.hero-testimoni');
+
+function eventTestimoni() {
+    let introPort = testimoni.getBoundingClientRect().top;
+    let screenPosition = window.innerHeight / 1.5;
+    if (introPort < screenPosition) {
+        heroTestimoni.classList.add('left');
+        textHeading.classList.add('righ');
+    }
+}
+window.addEventListener('scroll', eventTestimoni);

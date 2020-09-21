@@ -1,0 +1,18 @@
+#main.up {
+    opacity: 1;
+    transform: translateY(0);
+}
+.pricelist.up {
+    opacity: 1;
+    transform: translateY(0);
+}
+.testimoni .textScroll.righ {
+    opacity: 1;
+    left: 0;
+    position: relative;
+}
+.hero-testimoni.left {
+    position: relative;
+    right: 0;
+    opacity: 1;
+}

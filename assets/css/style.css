@@ -303,6 +303,13 @@ button.btn-price3 {
     justify-content: space-between;
     overflow: hidden;
 }
+.testimoni .textScroll {
+    position: relative;
+    top: 0;
+    left: -500px;
+    transition: 1s;
+
+}
 .testimoni h2 {
     font-family: 'Quicksand',sans-serif;
     font-size: 44px;
@@ -315,6 +322,9 @@ button.btn-price3 {
     width: 70%;
     position: relative;
     top: -200px;
+    right: -500px;
+    transition: 1s;
+  
 }
 .hero-testimoni span{
     color: rgb(96, 176, 207);
