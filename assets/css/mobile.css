@@ -141,9 +141,11 @@
     .course {
        min-height: 280px;  
        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+       
     }
     .cour-2{
         width: 100%;
+        margin: 20px auto;
     }
     button.btn-price1 {
         margin-top: 130px;
