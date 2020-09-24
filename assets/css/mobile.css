@@ -131,6 +131,8 @@
     .choose {
         max-width: 300px;
         margin-left: 0;
+        
+        margin-bottom: 10px;
    
     }
     .pricelist-menu {
@@ -260,7 +262,7 @@
         position: relative;
         display: flex;
         flex-wrap: wrap;
-        margin:  auto ;
+        margin:   auto 110px ;
     }
     aside img{
         border-radius: 50%;
