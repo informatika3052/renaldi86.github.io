@@ -80,7 +80,7 @@
         width: 25%; 
     }
     .content article h2 {
-        margin-top: 5px;
+        margin-top: 10px;
         font-size: 10px;
         margin-left: 0;
     }
@@ -145,7 +145,7 @@
     }
     .cour-2{
         width: 100%;
-        margin: 10px auto;
+        margin: 15px auto;
     }
     button.btn-price1 {
         margin-top: 130px;
